@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Dentilux</title>
+</head>
+
+<body>
+  <main class="main">
+    <header>
+      <div class="titulo">
+        <h1 class="logo">Dentilux</h1>
+      </div>
+      <hr>
+      <div class="menu-horizontal">
+        <nav class="menu">
+          <a class="enlace" href="#inicio">Inicio</a>
+          <a class="enlace" href="#servicios">Servicios</a>
+          <a class="enlace" href="#contacto">Contacto</a>
+          <a class="enlace" href="#">Testimonios</a>
+          <a class="enlace" href="#">Cita</a>
+          <a class="enlace" href="#">Blog</a>
+        </nav>
+      </div>
+    </header>
+    <section class="inicio" id="inicio">
+      <h3 class="texto-bienvenida">Bienvenido a nuestra clínica dental</h3>
+      <p class="slogan">Luce una sonrisa más brillante</p>
+
+      <!--  -->
+      <div class="carousel-wrapper">
+        <div class="carousel-container">
+          <div class="carousel">
+            <div class="image-one"></div>
+            <div class="image-two"></div>
+            <div class="image-three"></div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <p class="texto-inicio">DentiLux abrió sus puertas y estamos listos para ayudarte en cualquier problema dental que
+        tengas. Para separar
+        cita,
+        preguntas, dudas o inquietudes, puedes contactarnos y estaremos gustosos en atenderte.</p>
+    </section>
+    <section class="servicios">
+      <h3 id="servicios">Nuestros Servicios</h3>
+      <div class="grid">
+        <div class="grid__item">
+          <div class="card"><img class="card__img" src="assets/protesis-dental.jpg" alt="Snowy Mountains">
+            <div class="card__content">
+              <h1 class="card__header">Prótesis Dental</h1>
+              <p class="card__text">Look up at the night sky, and find yourself <strong>immersed</strong> in the amazing
+                mountain range of Aspen. </p><button class="card__btn">Mas Información <span>&rarr;</span></button>
+            </div>
+          </div>
+        </div>
+        <div class="grid__item">
+          <div class="card"><img class="card__img" src="assets/odontologia-estetica.jpg" alt="Desert">
+            <div class="card__content">
+              <h1 class="card__header">Odontología Estética</h1>
+              <p class="card__text">Capture the stunning <strong>essence</strong> of the early morning sunrise in the
+                Californian wilderness.</p><button class="card__btn">Mas Información<span>&rarr;</span></button>
+            </div>
+          </div>
+        </div>
+        <div class="grid__item">
+          <div class="card"><img class="card__img" src="assets/cirugia.jpg" alt="Canyons">
+            <div class="card__content">
+              <h1 class="card__header">Cirugía Bucal</h1>
+              <p class="card__text">Sunsets over the <strong>stunning</strong> Utah Canyonlands, is truly something much
+                more
+                than incredible.</p><button class="card__btn">Mas Información <span>&rarr;</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contacto -->
+    <section id="contacto" class="contacto">
+      <div class="datos-contacto">
+        <h3>Contáctenos</h3>
+        <div class="direccion">
+          <img class="logo-direccion" src="assets/ubicacion.svg" alt="logo de ubicación">
+          <p>Hospital del día IESS Sur Valdivia, Centro de Atención Ambulatoria, Avenida 25 de Julio, Guayaquil, Ecuador
+          </p>
+        </div>
+        <div class="correo">
+          <img class="logo-correo" src="assets/email.svg" alt="logo correo">
+          <a href="mailto:dentilux@gmail.com">dentilx@gmail.com</a>
+        </div>
+        <div class="telefono">
+          <img class="logo-telefono" src="assets/whatsapp.svg" alt="logo whatsapp">
+          <a href="tel:0990433273">0990433273</a>
+
+        </div>
+      </div>
+      <div class="formulario">
+        <form class="contact-form">
+          <input id="input-name" type="text" name="name" placeholder="Ingresa tu nombre *"
+            title="El campo nombre solo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+            required>
+          <input type="email" name="email" placeholder="Ingresa tu email *" required
+            pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" title="Email incorrecto">
+          <textarea name="comments" cols="50" rows="10" placeholder="Déjame tus comentarios *"></textarea>
+          <div class="contact-form-loader text-center none">
+            <img src="assets/loader.svg" alt="Enviando...">
+          </div>
+          <input class="btn" type="submit" value="Enviar Mensaje">
+        </form>
+        <article id="gracias" class="modal">
+          <div class="modal-content">
+            <article class="contact-form-response">
+              <h3>
+                ¡Muchas Gracias!
+                <br>
+                Por tus comentarios
+              </h3>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M12,18c4,0,5-4,5-4H7C7,14,8,18,12,18z" />
+                <path
+                  d="M12,2C6.486,2,2,6.486,2,12c0,5.514,4.486,10,10,10s10-4.486,10-10C22,6.486,17.514,2,12,2z M12,20c-4.411,0-8-3.589-8-8 s3.589-8,8-8s8,3.589,8,8S16.411,20,12,20z" />
+                <path
+                  d="M13 12l2 .012C15.012 11.55 15.194 11 16 11s.988.55 1 1h2c0-1.206-.799-3-3-3S13 10.794 13 12zM8 11c.806 0 .988.55 1 1h2c0-1.206-.799-3-3-3s-3 1.794-3 3l2 .012C7.012 11.55 7.194 11 8 11z" />
+              </svg>
+
+            </article>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- fin contacto -->
+    <!-- footer -->
+    <footer class="footer">
+      <small class="derechos">© Dentilux 2022</small>
+      <br>
+      <small>creado por @marino_veliz</small>
+    </footer>
+    <!-- fin footer -->
+  </main>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>
