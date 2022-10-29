@@ -43,7 +43,6 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: thin solid red;
 }
 
 /* *****************HEADER************************ */
@@ -214,7 +213,6 @@ hr {
 
 /* **************Hero-Images**************** */
 .carousel-wrapper {
-  border: thin solid red;
   width: 80%;
   display: flex;
   justify-content: center;
@@ -245,7 +243,6 @@ hr {
   height: 100px;
   background-size: cover;
   background-position: center;
-  border: solid red thin;
 }
 
 .carousel:hover {
@@ -600,7 +597,6 @@ hr {
 
 .datos-contacto {
   width: 100%;
-  border: solid thin red;
 }
 
 .direccion,
@@ -641,7 +637,6 @@ hr {
   width: 100%;
   height: auto;
   margin-top: 10%;
-  border: thin solid red;
 
 }
 
