@@ -89,9 +89,6 @@
   }
 
   /* ********* INICIO ********** */
-  .inicio {
-    border: thin solid red;
-  }
 
   .inicio .texto-bienvenida {
     margin-top: 5%;
@@ -102,58 +99,78 @@
     width: 80%;
     font-size: 1.5rem;
     line-height: 2rem;
+    margin-top: 5%;
   }
 
   .slogan {
     font-size: 1.4rem;
   }
 
+  .inicio_horario p {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    line-height: 2.5rem;
+
+  }
+
   /* ******Hero-Images******** */
+  .carousel-wrapper {
+    width: 680px;
+    height: 420px;
+  }
 
-  @media screen and (max-width: 768px) {
-    .carousel-wrapper {
-      width: 312px;
-      height: 210px;
+  .carousel-container {
+    width: 600px;
+    height: 400px;
+  }
+
+  .carousel {
+    width: 1800px;
+    height: 400px;
+  }
+
+  .carousel>div {
+    width: 600px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  @keyframes sliding {
+    30% {
+      transform: translateX(0);
     }
 
-    .carousel-container {
-      width: 240px;
-      height: 150px;
+    35% {
+      transform: translateX(-600px);
     }
 
-    .carousel {
-      width: 720px;
+    65% {
+      transform: translateX(-600px);
     }
 
-    .carousel>div {
-      width: 240px;
-      height: 150px;
+    70% {
+      transform: translateX(-1200px);
     }
 
-    @keyframes sliding {
-      30% {
-        transform: translateX(0);
-      }
+    98% {
+      transform: translateX(-1200px);
+    }
 
-      35% {
-        transform: translateX(-240px);
-      }
-
-      65% {
-        transform: translateX(-240px);
-      }
-
-      70% {
-        transform: translateX(-480px);
-      }
-
-      98% {
-        transform: translateX(-480px);
-      }
-
-      100% {
-        transform: translateX(0);
-      }
+    100% {
+      transform: translateX(0);
     }
   }
+
+  /* ********************** Servicios ********************** */
+  .grid {
+    display: grid;
+    width: 100%;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2, 45%);
+    align-items: start;
+    justify-content: center;
+  }
+
+
 }

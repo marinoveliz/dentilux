@@ -230,17 +230,6 @@ hr {
   align-items: start;
 }
 
-@media screen and (min-width:768px) {
-  .grid {
-    display: grid;
-    width: 100%;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-    align-items: start;
-  }
-
-}
-
 .grid__item {
   background-color: #fff;
   border-radius: 0.4rem;
