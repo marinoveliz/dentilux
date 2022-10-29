@@ -8,8 +8,9 @@ html {
   box-sizing: border-box;
   font-size: 16px;
   font-family: 'Fraunces', serif;
-  background-image: url(assets/foxtail.png);
+  background-image: url("../assets/foxtail.png");
   background-repeat: repeat;
+  overflow-x: hidden;
 }
 
 *,
@@ -22,7 +23,6 @@ body {
   width: 100vw;
   height: 100vh;
   margin: 0;
-  overflow-x: hidden;
 
 }
 
@@ -32,9 +32,7 @@ a {
   color: black;
 }
 
-
-
-/* ****************************************************** */
+/* ************* Main ************ */
 
 .main {
   width: 100%;
@@ -54,13 +52,11 @@ header {
 }
 
 .logo-container {
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 76%;
-  height: 93px;
+  height: auto;
   text-align: center;
 }
 
@@ -78,83 +74,7 @@ hr {
   width: 76%;
   opacity: 0;
   visibility: hidden;
-}
-
-.menu-container nav {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-
-.menu-container .menu .enlace {
-  display: inline-block;
-  padding: 6px 12px;
-  border-radius: 4px;
-  transition: all 0.2s ease-in;
-  position: relative;
-  overflow: hidden;
-  font-size: 1rem;
-  color: black;
-  z-index: 1;
-  text-decoration: none;
-  border: thin solid transparent;
-  outline: none;
-}
-
-.enlace:before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%) scaleY(1) scaleX(1.25);
-  top: 100%;
-  width: 140%;
-  height: 180%;
-  background-color: rgba(0, 0, 0, 0.05);
-  border-radius: 50%;
-  display: block;
-  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
-  z-index: -1;
-}
-
-.enlace:after {
-  content: "";
-  position: absolute;
-  left: 55%;
-  transform: translateX(-50%) scaleY(1) scaleX(1.45);
-  top: 180%;
-  width: 160%;
-  height: 190%;
-  background-color: #39bda7;
-  border-radius: 50%;
-  display: block;
-  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
-  z-index: -1;
-}
-
-.enlace:hover {
-  color: #ffffff;
-  border: 1px solid #39bda7;
-}
-
-.enlace:hover:before {
-  top: -35%;
-  background-color: #39bda7;
-  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
-}
-
-.enlace:hover:after {
-  top: -45%;
-  background-color: #39bda7;
-  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
-}
-
-
-.menu a:hover {
-  cursor: pointer;
-  background-color: #dce4e7;
+  overflow-x: hidden;
 }
 
 /* ********************** INICIO ********************* */
@@ -168,7 +88,8 @@ hr {
   margin: 0;
 }
 
-.inicio h3 {
+.inicio .texto-bienvenida {
+  width: 80%;
   font-size: 1.4rem;
   margin: 0;
 }
@@ -216,33 +137,33 @@ hr {
 
 /* **************Hero-Images**************** */
 .carousel-wrapper {
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
+  width: 300px;
+  height: 210px;
   display: flex;
   justify-content: center;
   align-items: center;
   box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2);
   border-radius: 20px;
-  overflow-x: hidden;
+  margin: 20px auto 20px;
 }
 
 .carousel-container {
-  width: 100%;
-  height: auto;
+  width: 240px;
+  height: 150px;
   overflow: hidden;
   margin: 0 auto;
 }
 
 .carousel {
   display: flex;
-  width: 100%;
+  width: 720px;
+  height: 150px;
   animation: sliding 10s infinite;
 }
 
 .carousel div {
-  width: 200px;
-  height: 100px;
+  width: 240px;
+  height: 150px;
   background-size: cover;
   background-position: center;
 }
@@ -252,15 +173,15 @@ hr {
 }
 
 .carousel .image-one {
-  background-image: url("assets/carousel1.jpg");
+  background-image: url("../assets/carousel1.jpg");
 }
 
 .carousel .image-two {
-  background-image: url("assets/carousel2.jpg");
+  background-image: url("../assets/carousel2.jpg");
 }
 
 .carousel .image-three {
-  background-image: url("assets/carousel3.jpg");
+  background-image: url("../assets/carousel3.jpg");
 }
 
 @keyframes sliding {
@@ -269,192 +190,23 @@ hr {
   }
 
   35% {
-    transform: translateX(-400px);
+    transform: translateX(-240px);
   }
 
   65% {
-    transform: translateX(-400px);
+    transform: translateX(-240px);
   }
 
   70% {
-    transform: translateX(-800px);
+    transform: translateX(-480px);
   }
 
   98% {
-    transform: translateX(-800px);
+    transform: translateX(-480px);
   }
 
   100% {
     transform: translateX(0);
-  }
-}
-
-@media screen and (min-width: 1024) {
-
-  .inicio {
-    width: 60%;
-  }
-
-  .inicio h3 {
-    font-size: 4rem;
-  }
-
-  .slogan {
-    font-size: 1.2rem;
-  }
-
-  .texto-inicio {
-    width: 100%;
-    font-family: sans-serif;
-    font-size: 1.5rem;
-    margin-top: 10vh;
-    line-height: 3rem;
-  }
-
-  .inicio_horario {
-    width: 25rem;
-    height: 20rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2);
-    border-radius: 20px;
-  }
-
-  .inicio_horario p {
-    line-height: 2rem;
-    margin-top: 0;
-    font-weight: bold;
-  }
-
-  .inicio_horario img {
-    width: 100%;
-    object-fit: contain;
-  }
-
-  .inicio_horario h4 {
-    margin-bottom: 0;
-  }
-
-  /* **************Hero-Images**************** */
-  .carousel-wrapper {
-    width: 680px;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2);
-    border-radius: 20px;
-  }
-
-  .carousel-container {
-    width: 600px;
-    height: 450px;
-    overflow: hidden;
-    margin: 0 auto;
-  }
-
-  .carousel {
-    display: flex;
-    width: 1800px;
-    animation: sliding 10s infinite;
-  }
-
-  .carousel div {
-    width: 600px;
-    height: 450px;
-    background-size: cover;
-    background-position: center;
-  }
-
-  .carousel:hover {
-    animation-play-state: paused;
-  }
-
-  .carousel .image-one {
-    background-image: url("assets/carousel1.jpg");
-  }
-
-  .carousel .image-two {
-    background-image: url("assets/carousel2.jpg");
-  }
-
-  .carousel .image-three {
-    background-image: url("assets/carousel3.jpg");
-  }
-
-  @keyframes sliding {
-    30% {
-      transform: translateX(0);
-    }
-
-    35% {
-      transform: translateX(-600px);
-    }
-
-    65% {
-      transform: translateX(-600px);
-    }
-
-    70% {
-      transform: translateX(-1200px);
-    }
-
-    98% {
-      transform: translateX(-1200px);
-    }
-
-    100% {
-      transform: translateX(0);
-    }
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .carousel-wrapper {
-    width: 312px;
-    height: 210px;
-  }
-
-  .carousel-container {
-    width: 240px;
-    height: 150px;
-  }
-
-  .carousel {
-    width: 720px;
-  }
-
-  .carousel>div {
-    width: 240px;
-    height: 150px;
-  }
-
-  @keyframes sliding {
-    30% {
-      transform: translateX(0);
-    }
-
-    35% {
-      transform: translateX(-240px);
-    }
-
-    65% {
-      transform: translateX(-240px);
-    }
-
-    70% {
-      transform: translateX(-480px);
-    }
-
-    98% {
-      transform: translateX(-480px);
-    }
-
-    100% {
-      transform: translateX(0);
-    }
   }
 }
 
@@ -474,7 +226,7 @@ hr {
   display: grid;
   width: 80%;
   grid-gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(1fr));
+  grid-template-columns: repeat(auto-fit, 1fr);
   align-items: start;
 }
 
