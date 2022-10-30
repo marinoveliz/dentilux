@@ -298,6 +298,91 @@ hr {
   margin-left: 1.5rem;
 }
 
+/* ***********Cita************* */
+.cita {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.cita h3 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.agenda-tu-cita {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.agenda-tu-cita img {
+  width: 70%;
+  object-fit: contain;
+}
+
+/* From uiverse.io by @Sergestra */
+button {
+  outline: 0;
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 140px;
+  height: 50px;
+  border-radius: 0.5em;
+  box-shadow: 0 0.625em 1em 0 rgba(30, 143, 255, 0.35);
+  overflow: hidden;
+}
+
+button div {
+  transform: translateY(0px);
+  width: 100%;
+}
+
+button,
+button div {
+  transition: 0.6s cubic-bezier(.16, 1, .3, 1);
+}
+
+button div span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  padding: 0.75em 1.125em;
+}
+
+button div:nth-child(1) {
+  background-color: #1e90ff;
+}
+
+button div:nth-child(2) {
+  background-color: #21dc62;
+}
+
+button:hover {
+  box-shadow: 0 0.625em 1em 0 rgba(33, 220, 98, 0.35);
+}
+
+button:hover div {
+  transform: translateY(-50px);
+}
+
+button p {
+  font-size: 17px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
 /* *************Contacto **************************/
 
 .contacto {
@@ -352,6 +437,12 @@ hr {
   height: auto;
   margin-top: 10%;
 
+}
+
+.separador {
+  margin-top: 2rem;
+  font-weight: bold;
+  margin-bottom: 0;
 }
 
 .formulario {
