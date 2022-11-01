@@ -343,46 +343,32 @@ hr {
 }
 
 .btn-cita {
+  width: 112px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   outline: 0;
   border: 0;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 140px;
-  height: 50px;
   border-radius: 0.5em;
   box-shadow: 0 0.625em 1em 0 rgba(30, 143, 255, 0.35);
   overflow: hidden;
-}
-
-.btn-cita div {
-  width: 100%;
-}
-
-.btn-cita div span {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 50px;
-  padding: 0.75em 1.125em;
-}
-
-.btn-cita div:nth-child(1) {
   background-color: #1e90ff;
+
+}
+
+.btn-cita a {
+  font-size: 1rem;
+  color: #fff;
 }
 
 .btn-cita:hover {
+  background-color: #2feb27;
   box-shadow: 0 0.625em 1em 0 rgba(33, 220, 98, 0.35);
 }
 
-.btn-cita p {
-  font-size: 17px;
-  font-weight: bold;
-  color: #ffffff;
-}
-
 .btn-cita:active {
-  transform: scale(0.95);
+  transform: scale(1.15);
 }
 
 /* *************Contacto **************************/

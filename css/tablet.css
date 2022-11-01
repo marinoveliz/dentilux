@@ -6,13 +6,14 @@
   }
 
   .menu-container {
-    width: 90%;
+    width: 80%;
+    height: auto;
     visibility: visible;
     opacity: 1;
   }
 
   .menu-container .menu {
-    width: 80%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -91,20 +92,21 @@
   /* ********* INICIO ********** */
 
   .inicio .texto-bienvenida {
-    margin-top: 5%;
+    margin-top: 1rem;
     font-size: 2rem;
   }
 
+  .slogan {
+    font-size: 1.5rem;
+  }
+
   .texto-inicio {
-    width: 80%;
+    width: 100%;
     font-size: 1.5rem;
     line-height: 2rem;
     margin-top: 5%;
   }
 
-  .slogan {
-    font-size: 1.4rem;
-  }
 
   .inicio_horario p {
     font-size: 1.5rem;
@@ -163,6 +165,10 @@
   }
 
   /* ********************** Servicios ********************** */
+  .servicios h3 {
+    font-size: 2.5rem;
+  }
+
   .grid {
     display: grid;
     width: 100%;
@@ -185,33 +191,50 @@
   }
 
   /* ******Cita******* */
-  .cita .texto-cita {
-    font-size: 1.5rem;
+  .cita {
+    margin-top: 2rem;
+  }
+
+  .cita h3 {
+    font-size: 2.5rem;
+  }
+
+  .texto-cita {
+    font-size: 1.7rem;
   }
 
   .btn-cita {
-    max-width: 240px;
-    height: 90px;
+    width: 160px;
+    height: 72px;
   }
 
-  .btn-cita div span {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 90px;
-    padding: 0.75em 1.125em;
-  }
-
-  .btn-cita:hover div {
-    transform: translateY(-90px);
-  }
-
-  .btn-cita p {
+  .btn-cita a {
     font-size: 1.5rem;
   }
 
+  .agenda-tu-cita img {
+    width: 60%;
+    object-fit: contain;
+  }
+
   /* ************Contacto***************** */
+
+  .contacto h3 {
+    font-size: 2.5rem;
+  }
+
   .separador {
+    font-size: 2rem;
+  }
+
+  /* ****** Footer ************/
+
+  .footer .derechos {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .footer .autor {
     font-size: 1.5rem;
   }
 }
