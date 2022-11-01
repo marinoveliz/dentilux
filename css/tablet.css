@@ -183,4 +183,35 @@
   .contact-form textarea {
     font-size: 1.2rem;
   }
+
+  /* ******Cita******* */
+  .cita .texto-cita {
+    font-size: 1.5rem;
+  }
+
+  .btn-cita {
+    max-width: 240px;
+    height: 90px;
+  }
+
+  .btn-cita div span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+    padding: 0.75em 1.125em;
+  }
+
+  .btn-cita:hover div {
+    transform: translateY(-90px);
+  }
+
+  .btn-cita p {
+    font-size: 1.5rem;
+  }
+
+  /* ************Contacto***************** */
+  .separador {
+    font-size: 1.5rem;
+  }
 }

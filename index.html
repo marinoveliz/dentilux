@@ -16,9 +16,7 @@
 </head>
 
 <body>
-
   <main class="main">
-
     <header class="cabecera">
       <div class="logo-container">
         <h1 class="logo">Dentilux</h1>
@@ -38,7 +36,6 @@
     <section class="inicio" id="inicio">
       <h3 class="texto-bienvenida">Bienvenido a nuestra clínica dental</h3>
       <p class="slogan">Luce una sonrisa más brillante</p>
-
       <div class="carousel-wrapper">
         <div class="carousel-container">
           <div class="carousel">
@@ -48,7 +45,6 @@
           </div>
         </div>
       </div>
-
       <p class="texto-inicio">DentiLux abrió sus puertas y estamos listos para ayudarte en cualquier problema dental que
         tengas. Para separar
         cita,
@@ -71,7 +67,7 @@
       </div>
     </section>
     <section class="servicios" id="servicios">
-      <h3>Nuestros Servicios</h3>
+      <h3 class="titulo">Nuestros Servicios</h3>
       <div class="grid">
         <div class="grid__item">
           <div class="card"><img class="card__img" src="assets/protesis-dental.jpg" alt="Snowy Mountains">
@@ -111,20 +107,15 @@
     <!-- Cita -->
     <section class="cita">
       <h3>Agenda tu cita</h3>
-      <p>No esperes mas y agenda tu cita con nosotros</p>
-      <button>
+      <p class="texto-cita">No esperes mas y agenda tu cita con nosotros</p>
+      <button class="btn-cita">
         <div>
           <span>
-            <a href="https://api.whatsapp.com/message/WDYVM75VUR2NN1?autoload=1&app_absent=0">
+            <a href="https://api.whatsapp.com/message/WDYVM75VUR2NN1?autoload=1&app_absent=0" rel="noopener"
+              target="_blank">
               <p>Tócame :)</p>
-              <!-- <p>:)</p> -->
+
             </a>
-          </span>
-        </div>
-        <div>
-          <span>
-            <p>Gracias</p>
-            <p>:D</p>
           </span>
         </div>
       </button>
@@ -143,6 +134,12 @@
             Julio, Guayaquil, Ecuador
           </p>
         </div>
+        <div class="mapa">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.754312559587!2d-79.89784378572024!3d-2.2456072380571053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6f515c0dff7f%3A0xcfdcc5af0a92f009!2sDentiLux!5e0!3m2!1ses!2sec!4v1666975357128!5m2!1ses!2sec"
+            width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
         <div class="correo">
           <img class="logo-correo" src="assets/email.svg" alt="logo correo">
           <a class="texto-correo" href="mailto:dentilux@gmail.com">dentilx.ecu@gmail.com</a>
@@ -151,18 +148,11 @@
           <img class="logo-telefono" src="assets/whatsapp.svg" alt="logo whatsapp">
           <a class="texto-telefono"
             href="https://api.whatsapp.com/message/WDYVM75VUR2NN1?autoload=1&app_absent=0">0978666212</a>
-
-        </div>
-        <div class="mapa">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.754312559587!2d-79.89784378572024!3d-2.2456072380571053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6f515c0dff7f%3A0xcfdcc5af0a92f009!2sDentiLux!5e0!3m2!1ses!2sec!4v1666975357128!5m2!1ses!2sec"
-            width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
-      <!-- Separador de formulario -->
-      <p class="separador">O también puedes dejarnos tus comentarios ...</p>
       <div class="formulario">
+        <!-- Separador de formulario -->
+        <p class="separador">O también puedes dejarnos tus comentarios ...</p>
         <form class="contact-form">
           <input id="input-name" type="text" name="name" placeholder="Ingresa tu nombre *"
             title="El campo nombre solo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
@@ -175,27 +165,27 @@
           </div>
           <input class="btn" type="submit" value="Enviar Mensaje">
         </form>
-        <article id="gracias" class="modal">
-          <div class="modal-content">
-            <article class="contact-form-response">
-              <h3>
-                ¡Muchas Gracias!
-                <br>
-                Por tus comentarios
-              </h3>
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                <path d="M12,18c4,0,5-4,5-4H7C7,14,8,18,12,18z" />
-                <path
-                  d="M12,2C6.486,2,2,6.486,2,12c0,5.514,4.486,10,10,10s10-4.486,10-10C22,6.486,17.514,2,12,2z M12,20c-4.411,0-8-3.589-8-8 s3.589-8,8-8s8,3.589,8,8S16.411,20,12,20z" />
-                <path
-                  d="M13 12l2 .012C15.012 11.55 15.194 11 16 11s.988.55 1 1h2c0-1.206-.799-3-3-3S13 10.794 13 12zM8 11c.806 0 .988.55 1 1h2c0-1.206-.799-3-3-3s-3 1.794-3 3l2 .012C7.012 11.55 7.194 11 8 11z" />
-              </svg>
-
-            </article>
-          </div>
-        </article>
       </div>
     </section>
+    <article id="gracias" class="modal">
+      <div class="modal-content">
+        <article class="contact-form-response">
+          <h3>
+            ¡Muchas Gracias!
+            <br>
+            Por tus comentarios
+          </h3>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M12,18c4,0,5-4,5-4H7C7,14,8,18,12,18z" />
+            <path
+              d="M12,2C6.486,2,2,6.486,2,12c0,5.514,4.486,10,10,10s10-4.486,10-10C22,6.486,17.514,2,12,2z M12,20c-4.411,0-8-3.589-8-8 s3.589-8,8-8s8,3.589,8,8S16.411,20,12,20z" />
+            <path
+              d="M13 12l2 .012C15.012 11.55 15.194 11 16 11s.988.55 1 1h2c0-1.206-.799-3-3-3S13 10.794 13 12zM8 11c.806 0 .988.55 1 1h2c0-1.206-.799-3-3-3s-3 1.794-3 3l2 .012C7.012 11.55 7.194 11 8 11z" />
+          </svg>
+
+        </article>
+      </div>
+    </article>
     <!-- fin contacto -->
 
     <!-- footer -->

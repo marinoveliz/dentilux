@@ -1,6 +1,12 @@
-/* ***** FCustom properties ***** */
+/* ***** Custom properties ***** */
 :root {
+  --black-alpha-color: rgba(0, 0, 0, 0.5);
   --color-principal: #49a0b1;
+  --font: 'Fraunces', serif;
+  --gray-dark-color: #666;
+  --first-color: #907ad6;
+  --first-color: #907ad6;
+  --white-color: #fff;
 }
 
 /* ***** Reset ***** */
@@ -21,7 +27,7 @@ html {
 
 body {
   width: 100vw;
-  height: 100vh;
+  height: auto;
   margin: 0;
 
 }
@@ -30,6 +36,10 @@ body {
 a {
   text-decoration: none;
   color: black;
+}
+
+.titulo {
+  font-size: 2rem;
 }
 
 /* ************* Main ************ */
@@ -44,11 +54,12 @@ a {
 }
 
 /* *****************HEADER************************ */
-header {
+.cabecera {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 1rem;
 }
 
 .logo-container {
@@ -61,7 +72,7 @@ header {
 }
 
 .logo {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin: 0;
 }
 
@@ -70,8 +81,15 @@ hr {
   margin: 0;
 }
 
-.menu-container {
+/* .menu-container {
   width: 76%;
+  opacity: 0;
+  visibility: hidden;
+  overflow-x: hidden;
+} */
+.menu-container {
+  width: 0;
+  height: 0;
   opacity: 0;
   visibility: hidden;
   overflow-x: hidden;
@@ -79,7 +97,7 @@ hr {
 
 /* ********************** INICIO ********************* */
 .inicio {
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -89,27 +107,27 @@ hr {
 }
 
 .inicio .texto-bienvenida {
-  width: 80%;
+  width: 100%;
+  margin: 1rem;
   font-size: 1.4rem;
-  margin: 0;
 }
 
 .slogan {
   font-family: sans-serif;
   font-size: 1rem;
+  margin: 0;
 }
 
 .texto-inicio {
-  width: 80%;
+  width: 100%;
   font-family: sans-serif;
-  font-size: 1rem;
-  margin-top: 10%;
+  margin-top: 1rem;
   line-height: 1.5rem;
   text-align: center;
 }
 
 .inicio_horario {
-  width: 80%;
+  width: 75%;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -123,7 +141,6 @@ hr {
 .inicio_horario p {
   line-height: 2rem;
   margin-top: 0;
-  /* font-weight: bold; */
 }
 
 .inicio_horario img {
@@ -212,19 +229,15 @@ hr {
 
 /* ********************** Servicios ********************** */
 .servicios {
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-}
-
-.servicios h3 {
-  font-size: 2rem;
 }
 
 .grid {
   display: grid;
-  width: 80%;
+  width: 100%;
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fit, 1fr);
   align-items: start;
@@ -305,12 +318,16 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 10%;
+  margin-top: 1rem;
 }
 
 .cita h3 {
   font-size: 2rem;
   margin: 0;
+}
+
+.texto-cita {
+  font-size: 1.2rem;
 }
 
 .agenda-tu-cita {
@@ -325,8 +342,7 @@ hr {
   object-fit: contain;
 }
 
-/* From uiverse.io by @Sergestra */
-button {
+.btn-cita {
   outline: 0;
   border: 0;
   display: flex;
@@ -339,17 +355,11 @@ button {
   overflow: hidden;
 }
 
-button div {
-  transform: translateY(0px);
+.btn-cita div {
   width: 100%;
 }
 
-button,
-button div {
-  transition: 0.6s cubic-bezier(.16, 1, .3, 1);
-}
-
-button div span {
+.btn-cita div span {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -357,29 +367,21 @@ button div span {
   padding: 0.75em 1.125em;
 }
 
-button div:nth-child(1) {
+.btn-cita div:nth-child(1) {
   background-color: #1e90ff;
 }
 
-button div:nth-child(2) {
-  background-color: #21dc62;
-}
-
-button:hover {
+.btn-cita:hover {
   box-shadow: 0 0.625em 1em 0 rgba(33, 220, 98, 0.35);
 }
 
-button:hover div {
-  transform: translateY(-50px);
-}
-
-button p {
+.btn-cita p {
   font-size: 17px;
   font-weight: bold;
   color: #ffffff;
 }
 
-button:active {
+.btn-cita:active {
   transform: scale(0.95);
 }
 
@@ -560,10 +562,10 @@ button:active {
 
 .footer {
   width: 100%;
-  margin-top: 10%;
   display: block;
-  text-align: center;
+  margin-top: 1rem;
   margin-bottom: 0;
+  text-align: center;
 }
 
 .footer .derechos {
